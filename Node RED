@@ -1,0 +1,37 @@
+[
+    {
+        "id": "78bcb1613309a7ec",
+        "type": "ui_text",
+        "z": "84952aa763212b15",
+        "group": "49a80110ba38995f",
+        "order": 12,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Time",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 750,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "49a80110ba38995f",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "ab658a689ef5e8f9",
+        "order": 1,
+        "disp": true,
+        "width": 15,
+        "collapse": false
+    },
+    {
+        "id": "ab658a689ef5e8f9",
+        "type": "ui_tab",
+        "name": "Tab ",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    }
+]
