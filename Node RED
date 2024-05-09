@@ -1,6 +1,6 @@
 [
     {
-        "id": "84952aa763212b15",
+        "id": "94f47cb54d729cc7",
         "type": "tab",
         "label": "流程 1",
         "disabled": false,
@@ -8,9 +8,9 @@
         "env": []
     },
     {
-        "id": "00d9e0c2dc6b98fe",
+        "id": "47fddedababff253",
         "type": "mqtt in",
-        "z": "84952aa763212b15",
+        "z": "94f47cb54d729cc7",
         "name": "A",
         "topic": "AIR2324_ParkingSpaceSituation1",
         "qos": "1",
@@ -24,14 +24,14 @@
         "y": 60,
         "wires": [
             [
-                "3e7d751c3510cb48"
+                "ccfe38d353c04bf3"
             ]
         ]
     },
     {
-        "id": "5c4ab278552f3b78",
+        "id": "9b963db61d28f666",
         "type": "simpletime",
-        "z": "84952aa763212b15",
+        "z": "94f47cb54d729cc7",
         "name": "",
         "mydate": true,
         "myymd": true,
@@ -58,14 +58,14 @@
         "y": 540,
         "wires": [
             [
-                "3526a86ca787b23f"
+                "42e2b1a2fc095188"
             ]
         ]
     },
     {
-        "id": "9c8d4d4fdcc94aff",
+        "id": "b2442ff42da44c7a",
         "type": "inject",
-        "z": "84952aa763212b15",
+        "z": "94f47cb54d729cc7",
         "name": "",
         "props": [
             {
@@ -87,16 +87,16 @@
         "y": 540,
         "wires": [
             [
-                "5c4ab278552f3b78"
+                "9b963db61d28f666"
             ]
         ]
     },
     {
-        "id": "3526a86ca787b23f",
+        "id": "42e2b1a2fc095188",
         "type": "function",
-        "z": "84952aa763212b15",
+        "z": "94f47cb54d729cc7",
         "name": "function 2",
-        "func": "var payload=msg; \nvar dateStr=payload.mydate; \nvar tempstr=dateStr.split(\" \");\nvar strobj=Object.assign({},tempstr); \nvar hzweekday,hzmonth; \nvar weekday=strobj[0]; \nvar month=strobj[1]; \nvar day=strobj[2]; \nvar year=strobj[3]; \n\nswitch(weekday){ \n    case \"Mon\":\n     hzweekday=\"星期一\"; \n     break; \n    case \"Tue\": \n     hzweekday=\"星期二\"; \n     break; \n    case \"Wed\": \n     hzweekday=\"星期三\"; \n     break; \n    case \"Thu\": \n     hzweekday=\"星期四\"; \n     break; \n    case \"Fri\": \n     hzweekday=\"星期五\"; \n     break; \n    case \"Sat\": \n     hzweekday=\"星期六\"; \n     break; \n    case \"Sun\": \n     hzweekday=\"星期日\"; \n     break; \n    default:\n     break; \n} \nswitch(month){ \n    case \"Jan\":\n       hzmonth=\"1月\";\n       break; \n    case \"Feb\": \n       hzmonth=\"2月\";\n        break; \n    case \"Mar\": \n       hzmonth=\"3月\"; \n       break; \n    case \"Apr\": \n       hzmonth=\"4月\";\n       break; \n    case \"May\": \n       hzmonth=\"5月\"; \n       break; \n     case \"Jun\":\n        hzmonth=\"6月\";\n        break;\n     case \"Jul\":\n        hzmonth=\"7月\"; \n        break; \n    case \"Aug\": \n        hzmonth=\"8月\"; \n        break; \n    case \"Sept\": \n        hzmonth=\"9月\"; \n        break; \n    case \"Sep\": \n        hzmonth=\"9月\"; \n        break; \n    case \"Oct\": \n        hzmonth=\"10月\"; \n        break; \n    case \"Nov\": \n        hzmonth=\"11月\"; \n        break; \n    case \"Dec\": \n        hzmonth=\"12月\"; \n        break; \n    default: \n        break; \n} \nmsg.payload=year+\"年\"+hzmonth+day+hzweekday+payload.mytimes; \n\nreturn msg;",
+        "func": "var payload=msg; \nvar dateStr=payload.mydate; \nvar tempstr=dateStr.split(\" \");\nvar strobj=Object.assign({},tempstr); \nvar hzweekday,hzmonth; \nvar weekday=strobj[0]; \nvar month=strobj[1]; \nvar day=strobj[2]; \nvar year=strobj[3]; \n\nswitch(weekday){ \n    case \"Mon\":\n     hzweekday=\"-(Mon)-\"; \n     break; \n    case \"Tue\": \n     hzweekday=\"-(Tue)-\"; \n     break; \n    case \"Wed\": \n     hzweekday=\"-(Wed)-\"; \n     break; \n    case \"Thu\": \n     hzweekday=\"-(Thu)-\"; \n     break; \n    case \"Fri\": \n     hzweekday=\"-(Fri)-\"; \n     break; \n    case \"Sat\": \n     hzweekday=\"-(Sat)-\"; \n     break; \n    case \"Sun\": \n     hzweekday=\"-(Sun)-\"; \n     break; \n    default:\n     break; \n} \nswitch(month){ \n    case \"Jan\":\n       hzmonth=\"1-\";\n       break; \n    case \"Feb\": \n       hzmonth=\"2-\";\n        break; \n    case \"Mar\": \n       hzmonth=\"3-\"; \n       break; \n    case \"Apr\": \n       hzmonth=\"4-\";\n       break; \n    case \"May\": \n       hzmonth=\"5-\"; \n       break; \n     case \"Jun\":\n        hzmonth=\"6-\";\n        break;\n     case \"Jul\":\n        hzmonth=\"7-\"; \n        break; \n    case \"Aug\": \n        hzmonth=\"8-\"; \n        break; \n    case \"Sept\": \n        hzmonth=\"9-\"; \n        break; \n    case \"Sep\": \n        hzmonth=\"9-\"; \n        break; \n    case \"Oct\": \n        hzmonth=\"10-\"; \n        break; \n    case \"Nov\": \n        hzmonth=\"11-\"; \n        break; \n    case \"Dec\": \n        hzmonth=\"12-\"; \n        break; \n    default: \n        break; \n} \nmsg.payload=year+\"-\"+hzmonth+day+hzweekday+payload.mytimes; \n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -107,16 +107,16 @@
         "y": 540,
         "wires": [
             [
-                "78bcb1613309a7ec"
+                "bc29c279d82e261a"
             ]
         ]
     },
     {
-        "id": "78bcb1613309a7ec",
+        "id": "bc29c279d82e261a",
         "type": "ui_text",
-        "z": "84952aa763212b15",
+        "z": "94f47cb54d729cc7",
         "group": "49a80110ba38995f",
-        "order": 14,
+        "order": 16,
         "width": 14,
         "height": 1,
         "name": "",
@@ -128,31 +128,31 @@
         "wires": []
     },
     {
-        "id": "3e7d751c3510cb48",
+        "id": "ccfe38d353c04bf3",
         "type": "ui_template",
-        "z": "84952aa763212b15",
+        "z": "94f47cb54d729cc7",
         "group": "49a80110ba38995f",
-        "name": "parking space3",
-        "order": 5,
+        "name": "spot1",
+        "order": 1,
         "width": 2,
         "height": 2,
-        "format": "<div style=\"width: 100px; height: 100px; border: 1px solid #000;\">\n    <span style=\"width: 20px; margin-right: 4px;\">lab3</span>\n    <div ng-style=\"{ 'background-color': msg.payload ? 'black' : 'transparent' }\" style=\"width: 100%; height: 100%;\"></div>\n</div>\n\n<style>\n    .parking-spot {\n        width: 50px;\n        height: 50px;\n        border: 1px solid #000;\n        margin: 5px;\n        display: inline-block;\n    }\n</style>",
+        "format": "<div style=\"width: 70px; height: 70px; border: 1px solid #000;\">\n    <span style=\"width: 20px; margin-right: 4px;\">spot1</span>\n    <div ng-style=\"{'background-color': msg.payload ? 'green' : 'transarent' }\" style=\"width: 100%; height: 100%;\"></div>\n</div>\n\n<style>\n    .parking-spot {\n        width: 70px;\n        height: 70px;\n        border: 1px solid #000;\n        margin: 5px;\n        display: inline-block;\n    }\n</style>",
         "storeOutMessages": true,
         "fwdInMessages": true,
         "resendOnRefresh": true,
         "templateScope": "local",
-        "x": 280,
+        "x": 250,
         "y": 60,
         "wires": [
             [
-                "d823cac72b04f31c"
+                "c7b7359534402fd7"
             ]
         ]
     },
     {
-        "id": "d823cac72b04f31c",
+        "id": "c7b7359534402fd7",
         "type": "debug",
-        "z": "84952aa763212b15",
+        "z": "94f47cb54d729cc7",
         "name": "debug 2",
         "active": true,
         "tosidebar": true,
@@ -161,14 +161,14 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 660,
+        "x": 560,
         "y": 40,
         "wires": []
     },
     {
-        "id": "20e14705f650be22",
+        "id": "ea908a82cd474aab",
         "type": "mqtt in",
-        "z": "84952aa763212b15",
+        "z": "94f47cb54d729cc7",
         "name": "A",
         "topic": "AIR2324_ParkingSpaceSituation3",
         "qos": "1",
@@ -182,14 +182,14 @@
         "y": 240,
         "wires": [
             [
-                "84ec7e9d7cacadd5"
+                "a31c52c2088a0310"
             ]
         ]
     },
     {
-        "id": "ec91ede2783b6464",
+        "id": "fa6aa8a174c60567",
         "type": "mqtt in",
-        "z": "84952aa763212b15",
+        "z": "94f47cb54d729cc7",
         "name": "A",
         "topic": "AIR2324_ParkingSpaceSituation5",
         "qos": "1",
@@ -203,14 +203,14 @@
         "y": 380,
         "wires": [
             [
-                "be584c4644d78d63"
+                "43f722086222e45a"
             ]
         ]
     },
     {
-        "id": "de4a14a9b421e548",
+        "id": "b87e92fd62cdd733",
         "type": "mqtt in",
-        "z": "84952aa763212b15",
+        "z": "94f47cb54d729cc7",
         "name": "A",
         "topic": "AIR2324_ParkingSpaceSituation4",
         "qos": "1",
@@ -224,14 +224,14 @@
         "y": 280,
         "wires": [
             [
-                "b992aa5cf8b2305f"
+                "cafa6468a4262e6d"
             ]
         ]
     },
     {
-        "id": "3b079a26e495cd13",
+        "id": "c3bfccbc04e738af",
         "type": "mqtt in",
-        "z": "84952aa763212b15",
+        "z": "94f47cb54d729cc7",
         "name": "A",
         "topic": "AIR2324_ParkingSpaceSituation2",
         "qos": "1",
@@ -245,14 +245,14 @@
         "y": 180,
         "wires": [
             [
-                "684117ea580dc3b9"
+                "97b4a009bca27789"
             ]
         ]
     },
     {
-        "id": "b7fe3922eee0cfb7",
+        "id": "c98f51f18a27ff0e",
         "type": "debug",
-        "z": "84952aa763212b15",
+        "z": "94f47cb54d729cc7",
         "name": "debug 3",
         "active": true,
         "tosidebar": true,
@@ -261,14 +261,14 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 480,
-        "y": 140,
+        "x": 540,
+        "y": 160,
         "wires": []
     },
     {
-        "id": "407a4afc31f71ac5",
+        "id": "68f730c3aaf31547",
         "type": "debug",
-        "z": "84952aa763212b15",
+        "z": "94f47cb54d729cc7",
         "name": "debug 4",
         "active": true,
         "tosidebar": true,
@@ -277,14 +277,14 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 400,
-        "y": 300,
+        "x": 460,
+        "y": 280,
         "wires": []
     },
     {
-        "id": "d8e6b6c079eb9c8e",
+        "id": "5a94262d32307f53",
         "type": "debug",
-        "z": "84952aa763212b15",
+        "z": "94f47cb54d729cc7",
         "name": "debug 5",
         "active": true,
         "tosidebar": true,
@@ -298,9 +298,9 @@
         "wires": []
     },
     {
-        "id": "53cd58b324859b43",
+        "id": "f182b43da077f3c3",
         "type": "debug",
-        "z": "84952aa763212b15",
+        "z": "94f47cb54d729cc7",
         "name": "debug 6",
         "active": true,
         "tosidebar": true,
@@ -314,9 +314,9 @@
         "wires": []
     },
     {
-        "id": "e6137df795b68d1a",
+        "id": "051012d65bef0ed9",
         "type": "mqtt in",
-        "z": "84952aa763212b15",
+        "z": "94f47cb54d729cc7",
         "name": "A",
         "topic": "AIR2324_ParkingSpaceSituation6",
         "qos": "1",
@@ -330,16 +330,17 @@
         "y": 480,
         "wires": [
             [
-                "1f7557ab29e7a9fa"
+                "aa1b60c0c805f70c",
+                "465cc9dca7d7c889"
             ]
         ]
     },
     {
-        "id": "5fa5e7b72b595331",
+        "id": "2b753d6aa0f3bc36",
         "type": "ui_text",
-        "z": "84952aa763212b15",
+        "z": "94f47cb54d729cc7",
         "group": "49a80110ba38995f",
-        "order": 15,
+        "order": 17,
         "width": 0,
         "height": 0,
         "name": "",
@@ -351,9 +352,9 @@
         "wires": []
     },
     {
-        "id": "1f7557ab29e7a9fa",
+        "id": "aa1b60c0c805f70c",
         "type": "function",
-        "z": "84952aa763212b15",
+        "z": "94f47cb54d729cc7",
         "name": "function 3",
         "func": "if(msg.payload==1)\n msg.payload=\"full\"\nelse\n msg.payload=\"null\"\n return msg;",
         "outputs": 1,
@@ -366,20 +367,20 @@
         "y": 480,
         "wires": [
             [
-                "5fa5e7b72b595331"
+                "2b753d6aa0f3bc36"
             ]
         ]
     },
     {
-        "id": "be584c4644d78d63",
+        "id": "43f722086222e45a",
         "type": "ui_template",
-        "z": "84952aa763212b15",
+        "z": "94f47cb54d729cc7",
         "group": "49a80110ba38995f",
         "name": "parking space2",
-        "order": 3,
+        "order": 9,
         "width": 2,
         "height": 2,
-        "format": "<div style=\"width: 100px; height: 100px; border: 1px solid #000;\">\n   <span style=\"width: 20px; margin-right: 4px;\">lab2</span>\n    <div ng-style=\"{ 'background-color': msg.payload ? 'black' : 'transparent' }\" style=\"width: 100%; height: 100%;\"></div>\n</div>\n\n<style>\n    .parking-spot {\n        width: 50px;\n        height: 50px;\n        border: 1px solid #000;\n        margin: 5px;\n        display: inline-block;\n    }\n</style>",
+        "format": "<div style=\"width: 70px; height: 70px; border: 1px solid #000;\">\n   <span style=\"width: 20px; margin-right: 4px;\">lab5</span>\n    <div ng-style=\"{ 'background-color': msg.payload ? 'black' : 'transparent' }\" style=\"width: 70%; height: 70%;\"></div>\n</div>\n\n<style>\n    .parking-spot {\n        width: 50px;\n        height: 50px;\n        border: 1px solid #000;\n        margin: 5px;\n        display: inline-block;\n    }\n</style>",
         "storeOutMessages": true,
         "fwdInMessages": true,
         "resendOnRefresh": true,
@@ -388,80 +389,106 @@
         "y": 380,
         "wires": [
             [
-                "d8e6b6c079eb9c8e"
+                "5a94262d32307f53"
             ]
         ]
     },
     {
-        "id": "b992aa5cf8b2305f",
+        "id": "cafa6468a4262e6d",
         "type": "ui_template",
-        "z": "84952aa763212b15",
+        "z": "94f47cb54d729cc7",
         "group": "49a80110ba38995f",
         "name": "parking space4",
         "order": 7,
         "width": 2,
         "height": 2,
-        "format": "<div style=\"width: 100px; height: 100px; border: 1px solid #000;\">\n    <span style=\"width: 20px; margin-right: 4px;\">lab4</span>\n    <div ng-style=\"{ 'background-color': msg.payload ? 'black' : 'transparent' }\" style=\"width: 100%; height: 100%;\"></div>\n</div>\n\n<style>\n    .parking-spot {\n        width: 50px;\n        height: 50px;\n        border: 1px solid #000;\n        margin: 5px;\n        display: inline-block;\n    }\n</style>",
+        "format": "<div style=\"width: 70px; height: 70px; border: 1px solid #000;\">\n    <span style=\"width: 20px; margin-right: 4px;\">lab4</span>\n    <div ng-style=\"{ 'background-color': msg.payload ? 'black' : 'transparent' }\" style=\"width: 70%; height: 70%;\"></div>\n</div>\n\n<style>\n    .parking-spot {\n        width: 50px;\n        height: 50px;\n        border: 1px solid #000;\n        margin: 5px;\n        display: inline-block;\n    }\n</style>",
         "storeOutMessages": true,
         "fwdInMessages": true,
         "resendOnRefresh": true,
         "templateScope": "local",
-        "x": 220,
-        "y": 300,
+        "x": 260,
+        "y": 280,
         "wires": [
             [
-                "407a4afc31f71ac5"
+                "68f730c3aaf31547"
             ]
         ]
     },
     {
-        "id": "84ec7e9d7cacadd5",
+        "id": "a31c52c2088a0310",
         "type": "ui_template",
-        "z": "84952aa763212b15",
+        "z": "94f47cb54d729cc7",
         "group": "49a80110ba38995f",
         "name": "parking space1",
-        "order": 1,
+        "order": 5,
         "width": 2,
         "height": 2,
-        "format": "<div style=\"width: 100px; height: 100px; border: 1px solid #000;\">\n    <span style=\"width: 20px; margin-right: 4px;\">lab1</span>\n    <div ng-style=\"{ 'background-color': msg.payload ? 'black' : 'transparent' }\" style=\"width: 100%; height: 100%;\"></div>\n</div>\n\n<style>\n    .parking-spot {\n        width: 50px;\n        height: 50px;\n        border: 1px solid #000;\n        margin: 5px;\n        display: inline-block;\n    }\n</style>",
+        "format": "<div style=\"width: 70px; height: 70px; border: 1px solid #000;\">\n    <span style=\"width: 20px; margin-right: 4px;\">lab3</span>\n    <div ng-style=\"{ 'background-color': msg.payload ? 'black' : 'transparent' }\" style=\"width: 70%; height: 70%;\"></div>\n</div>\n\n<style>\n    .parking-spot {\n        width: 50px;\n        height: 50px;\n        border: 1px solid #000;\n        margin: 5px;\n        display: inline-block;\n    }\n</style>",
         "storeOutMessages": true,
         "fwdInMessages": true,
         "resendOnRefresh": true,
         "templateScope": "local",
-        "x": 340,
-        "y": 260,
+        "x": 300,
+        "y": 220,
         "wires": [
             [
-                "53cd58b324859b43"
+                "f182b43da077f3c3"
             ]
         ]
     },
     {
-        "id": "684117ea580dc3b9",
+        "id": "97b4a009bca27789",
         "type": "ui_template",
-        "z": "84952aa763212b15",
+        "z": "94f47cb54d729cc7",
         "group": "49a80110ba38995f",
         "name": "parking space5",
-        "order": 9,
+        "order": 3,
         "width": 2,
         "height": 2,
-        "format": "<div style=\"width: 100px; height: 100px; border: 1px solid #000;\">\n    <span style=\"width: 20px; margin-right: 4px;\">lab5</span>\n    <div ng-style=\"{ 'background-color': msg.payload ? 'black' : 'transparent' }\" style=\"width: 100%; height: 100%;\"></div>\n</div>\n\n<style>\n    .parking-spot {\n        width: 50px;\n        height: 50px;\n        border: 1px solid #000;\n        margin: 5px;\n        display: inline-block;\n    }\n</style>",
+        "format": "<div style=\"width: 70px; height: 70px; border: 1px solid #000;\">\n    <span style=\"width: 20px; margin-right: 4px;\">lab2</span>\n    <div ng-style=\"{ 'background-color': msg.payload ? 'black' : 'transparent' }\" style=\"width: 70%; height: 70%;\"></div>\n</div>\n\n<style>\n    .parking-spot {\n        width: 50px;\n        height: 50px;\n        border: 1px solid #000;\n        margin: 5px;\n        display: inline-block;\n    }\n</style>",
         "storeOutMessages": true,
         "fwdInMessages": true,
         "resendOnRefresh": true,
         "templateScope": "local",
         "x": 320,
-        "y": 180,
+        "y": 160,
         "wires": [
             [
-                "b7fe3922eee0cfb7"
+                "c98f51f18a27ff0e"
             ]
         ]
     },
     {
-        "id": "df47c91b024b126c",
+        "id": "465cc9dca7d7c889",
+        "type": "ui_gauge",
+        "z": "94f47cb54d729cc7",
+        "name": "",
+        "group": "49a80110ba38995f",
+        "order": 25,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "5",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 510,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "c14f0515bc59f4f5",
         "type": "ui_spacer",
-        "z": "84952aa763212b15",
+        "z": "94f47cb54d729cc7",
         "name": "spacer",
         "group": "49a80110ba38995f",
         "order": 2,
@@ -469,9 +496,9 @@
         "height": 1
     },
     {
-        "id": "ced560e2d088c7f2",
+        "id": "3bcfeccd9480183e",
         "type": "ui_spacer",
-        "z": "84952aa763212b15",
+        "z": "94f47cb54d729cc7",
         "name": "spacer",
         "group": "49a80110ba38995f",
         "order": 4,
@@ -479,9 +506,9 @@
         "height": 1
     },
     {
-        "id": "2b9d8a4d4d2fa076",
+        "id": "edd9719c725621fc",
         "type": "ui_spacer",
-        "z": "84952aa763212b15",
+        "z": "94f47cb54d729cc7",
         "name": "spacer",
         "group": "49a80110ba38995f",
         "order": 6,
@@ -489,9 +516,9 @@
         "height": 1
     },
     {
-        "id": "abc05440f9eee128",
+        "id": "2ae426b771b4f245",
         "type": "ui_spacer",
-        "z": "84952aa763212b15",
+        "z": "94f47cb54d729cc7",
         "name": "spacer",
         "group": "49a80110ba38995f",
         "order": 8,
@@ -499,9 +526,9 @@
         "height": 1
     },
     {
-        "id": "6ec66e75107a17f1",
+        "id": "26bfed2a5c119769",
         "type": "ui_spacer",
-        "z": "84952aa763212b15",
+        "z": "94f47cb54d729cc7",
         "name": "spacer",
         "group": "49a80110ba38995f",
         "order": 10,
@@ -509,9 +536,9 @@
         "height": 1
     },
     {
-        "id": "62afc102788fd6f8",
+        "id": "97e5ff47ef8b20f8",
         "type": "ui_spacer",
-        "z": "84952aa763212b15",
+        "z": "94f47cb54d729cc7",
         "name": "spacer",
         "group": "49a80110ba38995f",
         "order": 11,
@@ -519,9 +546,9 @@
         "height": 1
     },
     {
-        "id": "999099ee79bd48ad",
+        "id": "8e70c5b033c08654",
         "type": "ui_spacer",
-        "z": "84952aa763212b15",
+        "z": "94f47cb54d729cc7",
         "name": "spacer",
         "group": "49a80110ba38995f",
         "order": 12,
@@ -529,13 +556,33 @@
         "height": 1
     },
     {
-        "id": "9179d492a5895075",
+        "id": "c0d6343575b46979",
         "type": "ui_spacer",
-        "z": "84952aa763212b15",
+        "z": "94f47cb54d729cc7",
         "name": "spacer",
         "group": "49a80110ba38995f",
         "order": 13,
         "width": 1,
+        "height": 1
+    },
+    {
+        "id": "c8191fbd09495ab1",
+        "type": "ui_spacer",
+        "z": "94f47cb54d729cc7",
+        "name": "spacer",
+        "group": "49a80110ba38995f",
+        "order": 14,
+        "width": 14,
+        "height": 1
+    },
+    {
+        "id": "0ff1cc1dc5505f19",
+        "type": "ui_spacer",
+        "z": "94f47cb54d729cc7",
+        "name": "spacer",
+        "group": "49a80110ba38995f",
+        "order": 15,
+        "width": 14,
         "height": 1
     },
     {
@@ -573,18 +620,17 @@
         "id": "49a80110ba38995f",
         "type": "ui_group",
         "name": "Default",
-        "tab": "ab658a689ef5e8f9",
+        "tab": "9c56942c1aec8846",
         "order": 1,
         "disp": true,
-        "width": 14,
+        "width": "14",
         "collapse": false
     },
     {
-        "id": "ab658a689ef5e8f9",
+        "id": "9c56942c1aec8846",
         "type": "ui_tab",
-        "name": "Tab ",
+        "name": "Home",
         "icon": "dashboard",
-        "order": 1,
         "disabled": false,
         "hidden": false
     }
