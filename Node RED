@@ -8,6 +8,301 @@
         "env": []
     },
     {
+        "id": "23be74257b62b40e",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "49a80110ba38995f",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "9c56942c1aec8846",
+        "order": 1,
+        "disp": true,
+        "width": "14",
+        "collapse": false
+    },
+    {
+        "id": "b8abdeb9a02ce7b8",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "test.mosquitto.org",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "9c56942c1aec8846",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "3b7596c7d693f9fd",
+        "type": "ui_tab",
+        "name": "Tab ",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "f2d8b5a87d55ee56",
+        "type": "ui_tab",
+        "name": "Tab ",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "28125d09ae7608a3",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "broker.emqx.io",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "c14f0515bc59f4f5",
+        "type": "ui_spacer",
+        "z": "94f47cb54d729cc7",
+        "name": "spacer",
+        "group": "49a80110ba38995f",
+        "order": 2,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "3bcfeccd9480183e",
+        "type": "ui_spacer",
+        "z": "94f47cb54d729cc7",
+        "name": "spacer",
+        "group": "49a80110ba38995f",
+        "order": 4,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "edd9719c725621fc",
+        "type": "ui_spacer",
+        "z": "94f47cb54d729cc7",
+        "name": "spacer",
+        "group": "49a80110ba38995f",
+        "order": 6,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "2ae426b771b4f245",
+        "type": "ui_spacer",
+        "z": "94f47cb54d729cc7",
+        "name": "spacer",
+        "group": "49a80110ba38995f",
+        "order": 8,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "26bfed2a5c119769",
+        "type": "ui_spacer",
+        "z": "94f47cb54d729cc7",
+        "name": "spacer",
+        "group": "49a80110ba38995f",
+        "order": 10,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "97e5ff47ef8b20f8",
+        "type": "ui_spacer",
+        "z": "94f47cb54d729cc7",
+        "name": "spacer",
+        "group": "49a80110ba38995f",
+        "order": 11,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "8e70c5b033c08654",
+        "type": "ui_spacer",
+        "z": "94f47cb54d729cc7",
+        "name": "spacer",
+        "group": "49a80110ba38995f",
+        "order": 12,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "c0d6343575b46979",
+        "type": "ui_spacer",
+        "z": "94f47cb54d729cc7",
+        "name": "spacer",
+        "group": "49a80110ba38995f",
+        "order": 13,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "c8191fbd09495ab1",
+        "type": "ui_spacer",
+        "z": "94f47cb54d729cc7",
+        "name": "spacer",
+        "group": "49a80110ba38995f",
+        "order": 14,
+        "width": 14,
+        "height": 1
+    },
+    {
+        "id": "0ff1cc1dc5505f19",
+        "type": "ui_spacer",
+        "z": "94f47cb54d729cc7",
+        "name": "spacer",
+        "group": "49a80110ba38995f",
+        "order": 15,
+        "width": 14,
+        "height": 1
+    },
+    {
         "id": "47fddedababff253",
         "type": "mqtt in",
         "z": "94f47cb54d729cc7",
@@ -136,7 +431,7 @@
         "order": 1,
         "width": 2,
         "height": 2,
-        "format": "<div style=\"width: 70px; height: 70px; border: 1px solid #000;\">\n    <span style=\"width: 20px; margin-right: 4px;\">spot1</span>\n    <div ng-style=\"{'background-color': msg.payload ? 'green' : 'transarent' }\" style=\"width: 100%; height: 100%;\"></div>\n</div>\n\n<style>\n    .parking-spot {\n        width: 70px;\n        height: 70px;\n        border: 1px solid #000;\n        margin: 5px;\n        display: inline-block;\n    }\n</style>",
+        "format": "<div style=\"width: 70px; height: 70px; border: 1px solid #000;\">\n    <span style=\"width: 20px; margin-right: 4px;\">spot1</span>\n    <div ng-style=\"{'background-color': msg.payload === 1 ? 'black' : (msg.payload === 0 ? 'green' : 'transparent') }\" style=\"width: 70%; height: 70%;\"></div>\n</div>\n\n<style>\n    .parking-spot {\n        width: 50px;\n        height: 50px;\n        border: 1px solid #000;\n        margin: 5px;\n        display: inline-block;\n    }\n</style>",
         "storeOutMessages": true,
         "fwdInMessages": true,
         "resendOnRefresh": true,
@@ -158,7 +453,8 @@
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "false",
+        "complete": "payload",
+        "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
         "x": 560,
@@ -331,7 +627,7 @@
         "wires": [
             [
                 "aa1b60c0c805f70c",
-                "465cc9dca7d7c889"
+                "58d108b90cfdc98c"
             ]
         ]
     },
@@ -356,7 +652,7 @@
         "type": "function",
         "z": "94f47cb54d729cc7",
         "name": "function 3",
-        "func": "if(msg.payload==1)\n msg.payload=\"full\"\nelse\n msg.payload=\"null\"\n return msg;",
+        "func": "if(msg.payload==1)\n msg.payload=\"full\"\nelse (msg.payload==0)\n msg.payload=\"null\"\n return msg;",
         "outputs": 1,
         "timeout": "1",
         "noerr": 0,
@@ -376,16 +672,16 @@
         "type": "ui_template",
         "z": "94f47cb54d729cc7",
         "group": "49a80110ba38995f",
-        "name": "parking space2",
+        "name": "spot5",
         "order": 9,
         "width": 2,
         "height": 2,
-        "format": "<div style=\"width: 70px; height: 70px; border: 1px solid #000;\">\n   <span style=\"width: 20px; margin-right: 4px;\">lab5</span>\n    <div ng-style=\"{ 'background-color': msg.payload ? 'black' : 'transparent' }\" style=\"width: 70%; height: 70%;\"></div>\n</div>\n\n<style>\n    .parking-spot {\n        width: 50px;\n        height: 50px;\n        border: 1px solid #000;\n        margin: 5px;\n        display: inline-block;\n    }\n</style>",
+        "format": "<div style=\"width: 70px; height: 70px; border: 1px solid #000;\">\n   <span style=\"width: 20px; margin-right: 4px;\">spot5</span>\n    <div ng-style=\"{'background-color': msg.payload === 1 ? 'black' : (msg.payload === 0 ? 'green' : 'transparent') }\" style=\"width: 70%; height: 70%;\"></div>\n</div>\n\n<style>\n    .parking-spot {\n        width: 50px;\n        height: 50px;\n        border: 1px solid #000;\n        margin: 5px;\n        display: inline-block;\n    }\n</style>",
         "storeOutMessages": true,
         "fwdInMessages": true,
         "resendOnRefresh": true,
         "templateScope": "local",
-        "x": 280,
+        "x": 250,
         "y": 380,
         "wires": [
             [
@@ -398,16 +694,16 @@
         "type": "ui_template",
         "z": "94f47cb54d729cc7",
         "group": "49a80110ba38995f",
-        "name": "parking space4",
+        "name": "spot4",
         "order": 7,
         "width": 2,
         "height": 2,
-        "format": "<div style=\"width: 70px; height: 70px; border: 1px solid #000;\">\n    <span style=\"width: 20px; margin-right: 4px;\">lab4</span>\n    <div ng-style=\"{ 'background-color': msg.payload ? 'black' : 'transparent' }\" style=\"width: 70%; height: 70%;\"></div>\n</div>\n\n<style>\n    .parking-spot {\n        width: 50px;\n        height: 50px;\n        border: 1px solid #000;\n        margin: 5px;\n        display: inline-block;\n    }\n</style>",
+        "format": "<div style=\"width: 70px; height: 70px; border: 1px solid #000;\">\n    <span style=\"width: 20px; margin-right: 4px;\">spot4</span>\n    <div ng-style=\"{'background-color': msg.payload === 1 ? 'black' : (msg.payload === 0 ? 'green' : 'transparent') }\" style=\"width: 70%; height: 70%;\"></div>\n</div>\n\n<style>\n    .parking-spot {\n        width: 50px;\n        height: 50px;\n        border: 1px solid #000;\n        margin: 5px;\n        display: inline-block;\n    }\n</style>",
         "storeOutMessages": true,
         "fwdInMessages": true,
         "resendOnRefresh": true,
         "templateScope": "local",
-        "x": 260,
+        "x": 230,
         "y": 280,
         "wires": [
             [
@@ -420,16 +716,16 @@
         "type": "ui_template",
         "z": "94f47cb54d729cc7",
         "group": "49a80110ba38995f",
-        "name": "parking space1",
+        "name": "spot3",
         "order": 5,
         "width": 2,
         "height": 2,
-        "format": "<div style=\"width: 70px; height: 70px; border: 1px solid #000;\">\n    <span style=\"width: 20px; margin-right: 4px;\">lab3</span>\n    <div ng-style=\"{ 'background-color': msg.payload ? 'black' : 'transparent' }\" style=\"width: 70%; height: 70%;\"></div>\n</div>\n\n<style>\n    .parking-spot {\n        width: 50px;\n        height: 50px;\n        border: 1px solid #000;\n        margin: 5px;\n        display: inline-block;\n    }\n</style>",
+        "format": "<div style=\"width: 70px; height: 70px; border: 1px solid #000;\">\n    <span style=\"width: 20px; margin-right: 4px;\">spot3</span>\n    <div ng-style=\"{'background-color': msg.payload === 1 ? 'black' : (msg.payload === 0 ? 'green' : 'transparent') }\" style=\"width: 70%; height: 70%;\"></div>\n</div>\n\n<style>\n    .parking-spot {\n        width: 50px;\n        height: 50px;\n        border: 1px solid #000;\n        margin: 5px;\n        display: inline-block;\n    }\n</style>",
         "storeOutMessages": true,
         "fwdInMessages": true,
         "resendOnRefresh": true,
         "templateScope": "local",
-        "x": 300,
+        "x": 270,
         "y": 220,
         "wires": [
             [
@@ -442,16 +738,16 @@
         "type": "ui_template",
         "z": "94f47cb54d729cc7",
         "group": "49a80110ba38995f",
-        "name": "parking space5",
+        "name": "spot2",
         "order": 3,
         "width": 2,
         "height": 2,
-        "format": "<div style=\"width: 70px; height: 70px; border: 1px solid #000;\">\n    <span style=\"width: 20px; margin-right: 4px;\">lab2</span>\n    <div ng-style=\"{ 'background-color': msg.payload ? 'black' : 'transparent' }\" style=\"width: 70%; height: 70%;\"></div>\n</div>\n\n<style>\n    .parking-spot {\n        width: 50px;\n        height: 50px;\n        border: 1px solid #000;\n        margin: 5px;\n        display: inline-block;\n    }\n</style>",
+        "format": "<div style=\"width: 70px; height: 70px; border: 1px solid #000;\">\n    <span style=\"width: 20px; margin-right: 4px;\">spot2</span>\n    <div ng-style=\"{'background-color': msg.payload === 1 ? 'black' : (msg.payload === 0 ? 'green' : 'transparent') }\" style=\"width: 70%; height: 70%;\"></div>\n</div>\n\n<style>\n    .parking-spot {\n        width: 50px;\n        height: 50px;\n        border: 1px solid #000;\n        margin: 5px;\n        display: inline-block;\n    }\n</style>",
         "storeOutMessages": true,
         "fwdInMessages": true,
         "resendOnRefresh": true,
         "templateScope": "local",
-        "x": 320,
+        "x": 290,
         "y": 160,
         "wires": [
             [
@@ -460,16 +756,16 @@
         ]
     },
     {
-        "id": "465cc9dca7d7c889",
+        "id": "58d108b90cfdc98c",
         "type": "ui_gauge",
         "z": "94f47cb54d729cc7",
         "name": "",
         "group": "49a80110ba38995f",
-        "order": 25,
+        "order": 17,
         "width": 0,
         "height": 0,
         "gtype": "gage",
-        "title": "",
+        "title": "gauge",
         "label": "units",
         "format": "{{value}}",
         "min": 0,
@@ -481,157 +777,8 @@
         ],
         "seg1": "",
         "seg2": "",
-        "x": 510,
-        "y": 420,
+        "x": 310,
+        "y": 440,
         "wires": []
-    },
-    {
-        "id": "c14f0515bc59f4f5",
-        "type": "ui_spacer",
-        "z": "94f47cb54d729cc7",
-        "name": "spacer",
-        "group": "49a80110ba38995f",
-        "order": 2,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "3bcfeccd9480183e",
-        "type": "ui_spacer",
-        "z": "94f47cb54d729cc7",
-        "name": "spacer",
-        "group": "49a80110ba38995f",
-        "order": 4,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "edd9719c725621fc",
-        "type": "ui_spacer",
-        "z": "94f47cb54d729cc7",
-        "name": "spacer",
-        "group": "49a80110ba38995f",
-        "order": 6,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "2ae426b771b4f245",
-        "type": "ui_spacer",
-        "z": "94f47cb54d729cc7",
-        "name": "spacer",
-        "group": "49a80110ba38995f",
-        "order": 8,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "26bfed2a5c119769",
-        "type": "ui_spacer",
-        "z": "94f47cb54d729cc7",
-        "name": "spacer",
-        "group": "49a80110ba38995f",
-        "order": 10,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "97e5ff47ef8b20f8",
-        "type": "ui_spacer",
-        "z": "94f47cb54d729cc7",
-        "name": "spacer",
-        "group": "49a80110ba38995f",
-        "order": 11,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "8e70c5b033c08654",
-        "type": "ui_spacer",
-        "z": "94f47cb54d729cc7",
-        "name": "spacer",
-        "group": "49a80110ba38995f",
-        "order": 12,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "c0d6343575b46979",
-        "type": "ui_spacer",
-        "z": "94f47cb54d729cc7",
-        "name": "spacer",
-        "group": "49a80110ba38995f",
-        "order": 13,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "c8191fbd09495ab1",
-        "type": "ui_spacer",
-        "z": "94f47cb54d729cc7",
-        "name": "spacer",
-        "group": "49a80110ba38995f",
-        "order": 14,
-        "width": 14,
-        "height": 1
-    },
-    {
-        "id": "0ff1cc1dc5505f19",
-        "type": "ui_spacer",
-        "z": "94f47cb54d729cc7",
-        "name": "spacer",
-        "group": "49a80110ba38995f",
-        "order": 15,
-        "width": 14,
-        "height": 1
-    },
-    {
-        "id": "b8abdeb9a02ce7b8",
-        "type": "mqtt-broker",
-        "name": "",
-        "broker": "test.mosquitto.org",
-        "port": "1883",
-        "clientid": "",
-        "autoConnect": true,
-        "usetls": false,
-        "protocolVersion": "4",
-        "keepalive": "60",
-        "cleansession": true,
-        "autoUnsubscribe": true,
-        "birthTopic": "",
-        "birthQos": "0",
-        "birthRetain": "false",
-        "birthPayload": "",
-        "birthMsg": {},
-        "closeTopic": "",
-        "closeQos": "0",
-        "closeRetain": "false",
-        "closePayload": "",
-        "closeMsg": {},
-        "willTopic": "",
-        "willQos": "0",
-        "willRetain": "false",
-        "willPayload": "",
-        "willMsg": {},
-        "userProps": "",
-        "sessionExpiry": ""
-    },
-    {
-        "id": "49a80110ba38995f",
-        "type": "ui_group",
-        "name": "Default",
-        "tab": "9c56942c1aec8846",
-        "order": 1,
-        "disp": true,
-        "width": "14",
-        "collapse": false
-    },
-    {
-        "id": "9c56942c1aec8846",
-        "type": "ui_tab",
-        "name": "Home",
-        "icon": "dashboard",
-        "disabled": false,
-        "hidden": false
     }
 ]
